@@ -43,7 +43,7 @@ const Page = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-200 to-blue-400 flex justify-center items-center">
-      <div className="bg-white p-6 m-2 rounded-lg shadow-md w-full max-w-md">
+      <div className="bg-white p-6 m-4 rounded-lg shadow-md w-full max-w-md">
         <h1 className="text-3xl font-bold mb-6 text-center">Team Split Calculator</h1>
         <div className="mb-4">
           <label htmlFor="m1" className="block text-sm font-medium text-gray-700 mb-2">Team 1 X</label>
