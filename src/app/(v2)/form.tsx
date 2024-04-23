@@ -132,7 +132,7 @@ export function SignupFormDemo() {
     console.log("Form submitted");
   };
   return (
-    <div className="max-w-md w-[80vw] md:w-full mx-auto  rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black border-blue-400 border-[1px]">
+    <div className="max-h-[100vh] max-w-md w-[85vw] md:w-full mx-auto  rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black border-blue-400 border-[1px]">
       <h2 className="font-bold text-xl text-neutral-800 ml-1 dark:text-neutral-200">
         Team Split Calculator
       </h2>
