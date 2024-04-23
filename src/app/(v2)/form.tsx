@@ -43,6 +43,15 @@ export function SignupFormDemo() {
 
 
   useEffect(()=>{
+
+    const apk = Math.round(Math.round(2000/dam.mul1)+Math.round(2000/dam.mul2))
+
+     setA(apk)
+
+  },[m1,m2])
+
+
+  useEffect(()=>{
    
 
    const fetchData = async()=>{
