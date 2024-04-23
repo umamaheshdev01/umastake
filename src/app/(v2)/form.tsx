@@ -15,6 +15,9 @@ const supabaseUrl = 'https://myqgvtknkeilmcxriqhc.supabase.co'
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im15cWd2dGtua2VpbG1jeHJpcWhjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTM4NTUwODcsImV4cCI6MjAyOTQzMTA4N30.GmiWzn2Lr6fD99UvA69qmS7NyAijGh0Zb_-EGKEXGMY'
 const supabase = createClient(supabaseUrl, supabaseKey)
 
+
+
+
 export function SignupFormDemo() {
 
   supabase
@@ -207,12 +210,12 @@ export function SignupFormDemo() {
             <div className="flex flex-row  space-y-0 space-x-2 md:space-x-2 mb-4">
           <LabelInputContainer>
             <Label htmlFor="firstname">{team1} Split</Label>
-           <Input id="firstname" placeholder="-" type="text" value={a ? a/2 : 0} readOnly />
+           <Input id="firstname" placeholder="-" type="text" value={a ? (a/2).toString : 0} readOnly />
 
           </LabelInputContainer>
           <LabelInputContainer>
             <Label htmlFor="lastname">{team2} Split</Label>
-           <Input id="firstname" placeholder="-" type="text" value={a ? a/2 : 0} readOnly />
+           <Input id="firstname" placeholder="-" type="text" value={a ? (a/2).toString : 0} readOnly />
 
           </LabelInputContainer>
         </div>
