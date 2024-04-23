@@ -42,13 +42,7 @@ export function SignupFormDemo() {
   .subscribe()
 
 
-  useEffect(()=>{
-
-    const apk = Math.round(Math.round(2000/dam.mul1)+Math.round(2000/dam.mul2))
-
-     setA(apk)
-
-  },[m1,m2])
+  
 
 
   useEffect(()=>{
@@ -95,6 +89,15 @@ export function SignupFormDemo() {
   const [toggle, setToggle] = useState(true);
 
   useEffect(()=>{
+
+    const apk = Math.round(Math.round(2000/m1)+Math.round(2000/m2))
+
+     setA(apk)
+
+  },[m1,m2])
+
+  useEffect(()=>{
+    
      calc()
   },[a,m1,m2])
 
@@ -219,12 +222,12 @@ export function SignupFormDemo() {
             <div className="flex flex-row  space-y-0 space-x-2 md:space-x-2 mb-4">
           <LabelInputContainer>
             <Label htmlFor="firstname">{team1} Split</Label>
-           <Input id="firstname" placeholder="-" type="text" value={a ? (a/2).toString : 0} readOnly />
+           <Input id="firstname" placeholder="-" type="text" value={a ? (a/2): 0} readOnly />
 
           </LabelInputContainer>
           <LabelInputContainer>
             <Label htmlFor="lastname">{team2} Split</Label>
-           <Input id="firstname" placeholder="-" type="text" value={a ? (a/2).toString : 0} readOnly />
+           <Input id="firstname" placeholder="-" type="text" value={a ? (a/2) : 0} readOnly />
 
           </LabelInputContainer>
         </div>
