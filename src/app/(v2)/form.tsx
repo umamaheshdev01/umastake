@@ -124,7 +124,7 @@ export function SignupFormDemo() {
 
 
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted");
   };
@@ -268,6 +268,9 @@ const BottomGradient = () => {
 const LabelInputContainer = ({
   children,
   className,
+}: {
+  children: React.ReactNode;
+  className?: string;
 }) => {
   return (
     <div className={cn("flex flex-col space-y-2 w-full", className)}>
