@@ -3,11 +3,6 @@ import {useEffect,useState} from "react";
 import { Label } from "../components/label";
 import { Input } from "../components/input";
 import { cn } from "../utils/cn";
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from "@tabler/icons-react";
 
 
 import { createClient } from '@supabase/supabase-js'
@@ -23,7 +18,7 @@ export function SignupFormDemo() {
 
   supabase
   .channel('room1')
-  .on('postgres_changes', { event: '*', schema: 'Stats' }, payload => {
+  .on('postgres_changes', { event: '*', schema: 'Stats2' }, payload => {
     
      const dam = payload.new
 
@@ -51,10 +46,11 @@ export function SignupFormDemo() {
 
    const fetchData = async()=>{
 
-     const {data,error} = await supabase.from('Stats').select('*').eq('id',1)
+     const {data,error} = await supabase.from('Stats2').select('*').eq('id',1)
      
 
      const dam = data[0]
+     
 
      SetT1name(dam.team1)
      SetT2name(dam.team2)
@@ -175,7 +171,7 @@ export function SignupFormDemo() {
        
        
 
-        <Link href='/1'> <button
+      <Link href='/'> <button
           className="mb-5 bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
           type="button" 
         >
