@@ -91,7 +91,7 @@ export function SignupFormDemo() {
 
   useEffect(()=>{
 
-    const apk = Math.round(Math.round(8200/m1)+Math.round(8200/m2))
+    const apk = Math.round(Math.round(2125/m1)+Math.round(2125/m2))
 
      setA(apk)
 
