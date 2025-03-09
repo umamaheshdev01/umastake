@@ -28,7 +28,7 @@ export function SignupFormDemo() {
      setM2(dam.mul2)
 
 
-     const apk = Math.round(Math.round(2000/dam.mul1)+Math.round(2000/dam.mul2))
+     const apk = Math.round(Math.round(2125/dam.mul1)+Math.round(2125/dam.mul2))
 
      setA(apk)
 
@@ -58,7 +58,7 @@ export function SignupFormDemo() {
      setM2(dam.mul2)
 
 
-     const apk = Math.round(Math.round(2000/dam.mul1)+Math.round(2000/dam.mul2))
+     const apk = Math.round(Math.round(2125/dam.mul1)+Math.round(2125/dam.mul2))
 
      setA(apk)
 
@@ -87,7 +87,7 @@ export function SignupFormDemo() {
 
   useEffect(()=>{
 
-    const apk = Math.round(Math.round(2000/m1)+Math.round(2000/m2))
+    const apk = Math.round(Math.round(2125/m1)+Math.round(2125/m2))
 
      setA(apk)
 
